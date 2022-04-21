@@ -1,3 +1,10 @@
+/***************************************
+Insertion Sort:
+
+A simple sorting algorithm that builds the final sorted array
+one item at a time. It's efficient when sorting a small number
+of elements.
+***************************************/
 #pragma once
 
 namespace InsertionSort
