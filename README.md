@@ -13,3 +13,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | Name | File Location |
 | ---- | ------------- |
 | Insertion Sort | [CPlusPlus_Algorithms/InsertionSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/InsertionSort.h) |
+| Selection Sort | [CPlusPlus_Algorithms/SelectionSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/SelectionSort.h) |
