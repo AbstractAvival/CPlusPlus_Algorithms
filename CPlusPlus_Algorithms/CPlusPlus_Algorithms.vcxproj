@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InsertionSort.h" />
+    <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SelectionSort.h" />
     <ClInclude Include="ShellSort.h" />
   </ItemGroup>
