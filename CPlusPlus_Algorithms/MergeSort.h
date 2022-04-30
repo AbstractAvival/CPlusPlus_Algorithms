@@ -11,15 +11,12 @@ one sublist remaining. This final sublist is the sorted list.
 
 namespace MergeSort
 {
-	void Sort( int unsortedArray[], int initialIndex, int finalIndex )
+	void CopyArray( int originalArray[], int targetArray[], int targetArraySize, int initialIndex )
 	{
-		if( initialIndex >= finalIndex )
-			return;
-
-		int middleIndex = ( initialIndex + finalIndex ) / 2;
-		Sort( unsortedArray, initialIndex, finalIndex );
-		Sort( unsortedArray, middleIndex + 1, finalIndex );
-		Merge( unsortedArray, initialIndex, middleIndex, finalIndex );
+		for( auto index = 0; index < targetArraySize; index++ )
+		{
+			targetArray[ index ] = originalArray[ initialIndex + index ];
+		}
 	}
 
 	void Merge( int unsortedArray[], int initialIndex, int middleIndex, int finalIndex )
@@ -70,11 +67,14 @@ namespace MergeSort
 		delete [] secondArray;
 	}
 
-	void CopyArray( int originalArray[], int targetArray[], int targetArraySize, int initialIndex )
+	void Sort( int unsortedArray[], int initialIndex, int finalIndex )
 	{
-		for( auto index = 0; index < targetArraySize; index++ )
-		{
-			targetArray[ index ] = originalArray[ initialIndex + index ];
-		}
+		if( initialIndex >= finalIndex )
+			return;
+
+		int middleIndex = ( initialIndex + finalIndex ) / 2;
+		Sort( unsortedArray, initialIndex, middleIndex );
+		Sort( unsortedArray, middleIndex + 1, finalIndex );
+		Merge( unsortedArray, initialIndex, middleIndex, finalIndex );
 	}
 }
