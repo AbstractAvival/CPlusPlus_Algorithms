@@ -15,3 +15,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | Selection Sort | [CPlusPlus_Algorithms/SelectionSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/SelectionSort.h) |
 | Insertion Sort | [CPlusPlus_Algorithms/InsertionSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/InsertionSort.h) |
 | Shell Sort | [CPlusPlus_Algorithms/ShellSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/ShellSort.h) |
+| Merge Sort | [CPlusPlus_Algorithms/MergeSort](https://github.com/AbstractAvival/CPlusPlus_Algorithms/blob/master/CPlusPlus_Algorithms/MergeSort.h) |
