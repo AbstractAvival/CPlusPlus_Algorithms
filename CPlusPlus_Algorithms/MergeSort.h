@@ -1,7 +1,7 @@
 /***************************************
 Merge Sort:
 
-An efficient, general-purpose, and coparison-based sorting
+An efficient, general-purpose, and comparison-based sorting
 algorithm. Merge sort is a divide and conquer algorithm. It
 divides the input array into halves until it has n sublists,
 then it repeatedly merges these sublists until there is only
