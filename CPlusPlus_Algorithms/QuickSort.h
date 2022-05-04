@@ -7,6 +7,7 @@ pivot into sub-arrays. The sub-arrays are then sorted
 recursively.
 ***************************************/
 #pragma once
+#include <algorithm>
 
 namespace QuickSort
 {
@@ -30,10 +31,12 @@ namespace QuickSort
 			if( unsortedArray[ currentIndex ] < pivotValue )
 			{
 				currentPivotIndex++;
-
+				std::swap( unsortedArray[ currentIndex ], unsortedArray[ currentPivotIndex ] );
 			}
 		}
 
+		currentPivotIndex++;
+		std::swap( unsortedArray[ currentPivotIndex ], unsortedArray[ endIndex ] );
 		return currentPivotIndex;
 	}
 }
