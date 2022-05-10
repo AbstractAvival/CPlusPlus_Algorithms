@@ -8,6 +8,8 @@ recursively.
 ***************************************/
 #pragma once
 
+#include <utility>
+
 namespace QuickSort
 {
 	int Partition( int unsortedArray[], int startIndex, int endIndex )
