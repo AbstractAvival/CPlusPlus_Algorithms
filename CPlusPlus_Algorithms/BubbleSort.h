@@ -8,10 +8,21 @@ sorting algorithm.
 ***************************************/
 #pragma once
 
+#include <utility>
+
 namespace BubbleSort
 {
 	void Sort( int unsortedArray[], int arraySize )
 	{
-		
+		for( int count = 0; count < arraySize; count++ )
+		{
+			for( int swapIndex = 0; swapIndex < ( arraySize - count - 1 ); swapIndex++ )
+			{
+				if( unsortedArray[ swapIndex ] > unsortedArray[ swapIndex + 1 ] )
+				{
+					std::swap( unsortedArray[ swapIndex ], unsortedArray[ swapIndex + 1 ] );
+				}
+			}
+		}
 	}
 }
